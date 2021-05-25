@@ -1,4 +1,6 @@
+import 'package:covid_requirements/Provide.dart';
 import 'package:covid_requirements/homepage.dart';
+import 'package:covid_requirements/need.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -27,9 +29,13 @@ class _MyAppState extends State<MyApp> {
     return StreamProvider<Users>.value(
       value:AuthService().user,
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: new ThemeData(primaryColor: Color.fromRGBO(58, 66, 86, 1.0)),
         home:Wrapper(),
         routes: {
         '/homepage':(context)=>Homepage(),
+          '/need':(context)=>Need(),
+          '/provide':(context)=>Provide(),
         }
         ,
 
