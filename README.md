@@ -1,2 +1,2 @@
-# Grocerystore-check-list
-To detail items for a grocery store checklist
+# Covid_requirements
+This app is a user friendly application enabling user to create a profile by registering with email id and password.The user has provision to sign out and re login as well.The homepage consists of 2 buttons Need and Provide.The need button when pressed navigates to a new page where the requiremnets of the user can be entered .This will be submitted to the firebase.Then provide ,on pressing navigates to a page where all the requirements are listed out.
